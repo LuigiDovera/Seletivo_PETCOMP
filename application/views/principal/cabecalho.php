@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
     <!--Expand at sm-->
     <a class="navbar-brand" href="#">
         <a class="navbar-brand" href="<?= base_url() ?>">
@@ -10,8 +10,8 @@
     <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExample03">
-    <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto navbar-margin">
         <li class="nav-item">
         <a class="nav-link" href="<?= base_url() ?>">Início<span class="sr-only"></span></a>
         </li>
