@@ -1,35 +1,39 @@
-<div class="main-div">
-<div class="container-logo">
-	<img class="cabecalho-img" src="<?= base_url("assets/img/logo.jpg") ?>">
-	<div class="bottom-right">
-		<p>Reservas:</p> 
-		<p>(98) 4002-8922 / (98) 2465-8686</p>
-		<p>reserva@globohotelfazenda.com</p>
-	</div>
-	<div class="top-left">
-		<p>Globo Hotel Fazenda</p>
-	</div>
-</div>
 
-<nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-        <?= anchor("home", "Globo Hotel-Fazenda", array("class" => "logo"))?>
-        <ul class="main-nav" id="js-menu">
-            <li>
-                <?= anchor("home", "Home", array("class" => "nav-links"))?>
-            </li>
-            <li>
-                <?= anchor("acomodacoes", "Acomodações", array("class" => "nav-links"))?>
-            </li>
-            <li>
-                <?= anchor("restaurante", "Restaurante", array("class" => "nav-links"))?>
-            </li>
-            <li>
-                <?= anchor("contato", "Contato", array("class" => "nav-links"))?>
-            </li>
-        </ul>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!--Expand at sm-->
+    <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="<?= base_url() ?>">
+            <img src="<?= base_url("assets/img/PETComp.png") ?>" width="50" height="50" class="d-inline-block align-top" alt="">
+        </a>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="<?= base_url() ?>">Início<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="<?= base_url("sobre") ?>">Sobre Nós</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="<?= base_url("publicacoes") ?>">Publicações</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="<?= base_url("noticias") ?>">Notícias</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Biblioteca PETComp</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+            <a class="dropdown-item" href="#">Monitoria Algoritmos</a>
+            <a class="dropdown-item" href="#">Monitoria Cálculo 1</a>
+            <a class="dropdown-item" href="#">Monitoria LP 1</a>
+        </div>
+        </li>
+    </ul>
+    </div>
 </nav>
-<div class="conteudo">
-    <div class="conteudo-conteudo">
+
+
