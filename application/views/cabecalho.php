@@ -16,7 +16,7 @@
         <a class="nav-link" href="<?= base_url() ?>">Início<span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="<?= base_url("sobre") ?>">Sobre Nós</a>
+        <a class="nav-link" href="<?= base_url("main/sobre") ?>">Sobre Nós</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="<?= base_url("publicacoes") ?>">Publicações</a>
@@ -35,5 +35,7 @@
     </ul>
     </div>
 </nav>
+
+<div class="container-principal"> 
 
 

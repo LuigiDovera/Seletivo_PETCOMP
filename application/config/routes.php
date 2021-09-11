@@ -53,10 +53,3 @@ $route['default_controller'] = 'main/home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['administrador/(:num)'] = 'administrador/mostra/$1';
-$route['cardapio_item/(:num)'] = 'cardapio_item/mostra/$1';
-$route['lazer/(:num)'] = 'lazer/mostra/$1';
-$route['home'] = 'main/home';
-$route['acomodacoes'] = 'main/acomodacoes';
-$route['restaurante'] = 'main/restaurante';
-$route['contato'] = 'main/contato';

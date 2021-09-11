@@ -3,14 +3,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class MY_Loader extends CI_Loader {
 
-	public function homeTemplate($nome, $dados = array())
+	public function template($conteudos = array())
 	{
 		$this->view("html_header.php");
 		$this->view("cabecalho.php");
-		$this->view("conteudo_inicio.php");	
-		//$this->view($nome, $dados);
-		//$this->view("principal/rodape.php");
+
+		if($conteudos != array())
+		{
+			foreach ($conteudos as $conteudo)
+			{	
+				if(array_key_exists("dados", $conteudo)){
+					$this->view($conteudo["nome"], $conteudo["dados"]);					
+				}
+				else
+				{
+					$this->view($conteudo["nome"]);
+				}
+			}
+		}
+
+		$this->view("rodape.php");	
 		$this->view("html_footer.php");
 	}
-
 }
