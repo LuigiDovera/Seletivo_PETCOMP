@@ -4,14 +4,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Main extends CI_Controller {
 
 	public function home()
-	{
-		$this->load->template();
+	{	
+		$conteudo = array(array("view" => "conteudos/inicio"));
+		$this->load->template($conteudo);
 	}
 
 	public function sobre()
 	{
-		$conteudo = array(array("nome"=>"conteudos/sobre-texto.php"), 
-							array("nome"=>"conteudos/sobre-galeria.php")
+		$conteudo = array(array("view"=>"conteudos/sobre-texto.php"), 
+							array("view"=>"conteudos/sobre-galeria.php")
 						);
 		$this->load->template($conteudo);
 	}
@@ -19,7 +20,7 @@ class Main extends CI_Controller {
 	public function publicacoes()
 	{	$this->load->model("publicacoes_model");
 		$dados = array("publicacoes" => $this->publicacoes_model->buscaTodos());
-		$conteudo = array(array("nome" => "conteudos/publicacoes", "dados" => $dados));
+		$conteudo = array(array("view" => "conteudos/publicacoes", "dados" => $dados));
 		$this->load->template($conteudo);
 	}
 
@@ -27,7 +28,7 @@ class Main extends CI_Controller {
 	{
 		$this->load->model("noticias_model");
 		$dados = array("noticias" => $this->noticias_model->buscaTodos());
-		$conteudo = array(array("nome" => "conteudos/noticias", "dados" => $dados));
+		$conteudo = array(array("view" => "conteudos/noticias", "dados" => $dados));
 		$this->load->template($conteudo);
 	}
 }

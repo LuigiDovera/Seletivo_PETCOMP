@@ -1,6 +1,6 @@
 <h2>Sobre Nós</h2>
 
-<p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+<p class="text-justify">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Quisque vestibulum venenatis nisl ac porttitor. Suspendisse turpis sapien, bibendum eget scelerisque in,
      fringilla sit amet sapien. Cras metus velit, mollis et imperdiet ut, condimentum vitae nulla. 
      Duis tincidunt maximus eros. In et imperdiet ipsum. Proin vel eros scelerisque dolor aliquet fermentum nec 

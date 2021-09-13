@@ -13,11 +13,11 @@ class MY_Loader extends CI_Loader {
 			foreach ($conteudos as $conteudo)
 			{	
 				if(array_key_exists("dados", $conteudo)){
-					$this->view($conteudo["nome"], $conteudo["dados"]);					
+					$this->view($conteudo["view"], $conteudo["dados"]);					
 				}
 				else
 				{
-					$this->view($conteudo["nome"]);
+					$this->view($conteudo["view"]);
 				}
 			}
 		}

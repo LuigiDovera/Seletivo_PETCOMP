@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+<nav class="navbar navbar-expand-sm navbar-light bg-light ">
     <!--Expand at sm-->
     <a class="navbar-brand" href="#">
         <a class="navbar-brand" href="<?= base_url() ?>">
@@ -16,21 +16,16 @@
         <a class="nav-link" href="<?= base_url() ?>">Início<span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="<?= base_url("main/sobre") ?>">Sobre Nós</a>
+        <a class="nav-link" href="<?= base_url("index.php/main/sobre") ?>">Sobre Nós</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="<?= base_url("publicacoes") ?>">Publicações</a>
+        <a class="nav-link" href="<?= base_url("index.php/main/publicacoes") ?>">Publicações</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="<?= base_url("noticias") ?>">Notícias</a>
+        <a class="nav-link" href="<?= base_url("index.php/main/noticias") ?>">Notícias</a>
         </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Biblioteca PETComp</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown03">
-            <a class="dropdown-item" href="#">Monitoria Algoritmos</a>
-            <a class="dropdown-item" href="#">Monitoria Cálculo 1</a>
-            <a class="dropdown-item" href="#">Monitoria LP 1</a>
-        </div>
+        <li class="nav-item">
+        <a class="nav-link" href="<?= base_url("index.php/biblioteca") ?>">Biblioteca PETComp</a>
         </li>
     </ul>
     </div>
